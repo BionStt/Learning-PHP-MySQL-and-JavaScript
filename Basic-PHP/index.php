@@ -23,11 +23,11 @@
 
   $crewNames = array('Hugh Thompson Jr.','Larry Colburn','Glenn Andreotta');
   echo $crewNames[0];
-  echo " had two crewmates: ";
+  echo " and his crewmates, ";
   echo $crewNames[1];
   echo " and ";
   echo $crewNames[2];
-  echo ". The crew intervened during the My Lai massacre in Vietnam.<br><br>";
+  echo ", intervened during the My Lai massacre in Vietnam.<br><br>";
 
 // Two-dimensional array
 
