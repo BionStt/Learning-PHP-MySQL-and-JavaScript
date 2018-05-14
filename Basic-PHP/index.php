@@ -79,9 +79,20 @@ echo "Hey, did you say \"Escape those quotation marks?\" Because I did.<br><br>"
 $quote = <<<_end
 When the going gets weird, the wierd turn pro.
 <br>
---Hunter S. Thompson
+--Hunter S. Thompson <br><br>
 _end;
 
 echo $quote; 
+
+// Using constants
+
+define("APACHE_ROOT_LOCATION", "/var/www/html/");
+
+echo "The location is defined as \"" . APACHE_ROOT_LOCATION . "\"<br><br>";
+
+// Predefined Constants
+
+echo "Current line: <b>" . __LINE__ . "</b><br>";
+echo "Current file: <b>" . __FILE__ . "</b><br>";
 
 ?>
