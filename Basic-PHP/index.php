@@ -53,5 +53,13 @@
 // String concatenation
 
  echo "Unfortunately, " . $jerks[0][1] . $jerks[1][0] . " and " . $jerks[0][0] . $jerks[1][1] . " are still going strong.<br><br>";
-	
+
+// Basic Function
+
+  function simpleFunction()
+    {
+      echo "I'm a simple function.";
+    }
+
+  simpleFunction();	
 ?>
