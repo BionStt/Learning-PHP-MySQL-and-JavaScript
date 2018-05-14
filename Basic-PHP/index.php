@@ -48,6 +48,10 @@
   echo $remainder;
   echo " years since ";
   echo $crewNames[0];
-  echo " died.";
+  echo " died.<br><br>";
+
+// String concatenation
+
+ echo "Unfortunately, " . $jerks[0][1] . $jerks[1][0] . " and " . $jerks[0][0] . $jerks[1][1] . " are still going strong.<br><br>";
 	
 ?>
