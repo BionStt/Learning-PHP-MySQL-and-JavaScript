@@ -58,8 +58,30 @@
 
   function simpleFunction()
     {
-      echo "I'm a simple function.";
+      echo "Hugh Thompson recieved the Soldier's Medal in 1998. <br><br>";
     }
 
   simpleFunction();	
+
+// Strings
+
+$string = "String";
+
+echo 'This is a literal $string <br><br>';
+echo "This is a $string with substitution.<br><br>";
+
+// Escaping characters
+
+echo "Hey, did you say \"Escape those quotation marks?\" Because I did.<br><br>"; 
+
+// Multine string assignment
+
+$quote = <<<_end
+When the going gets weird, the wierd turn pro.
+<br>
+--Hunter S. Thompson
+_end;
+
+echo $quote; 
+
 ?>
