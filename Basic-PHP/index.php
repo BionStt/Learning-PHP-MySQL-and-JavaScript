@@ -93,6 +93,24 @@ echo "The location is defined as \"" . APACHE_ROOT_LOCATION . "\"<br><br>";
 // Predefined Constants
 
 echo "Current line: <b>" . __LINE__ . "</b><br>";
-echo "Current file: <b>" . __FILE__ . "</b><br>";
+echo "Current file: <b>" . __FILE__ . "</b><br><br>";
 
+// HTML Entities
+
+  $weirdCode = "<<>>\"";
+  $sanitizedCode = htmlentities($weirdCode);
+  echo $weirdCode . " => " . $sanitizedCode . "<br><br>";
+
+// Booleans
+
+  $a = TRUE;
+  $b = TRUE;
+  $c = FALSE;
+  echo "This statement is TRUE:" . TRUE . "<br>";
+  echo "This statement is FALSE:" . FALSE . "<br>";
+  echo "Is 5 equal to 3?" . (5 == 3) . "<br>";
+  echo "Is 5 greater than 2? " . (5 > 2) . "<br>";
+  echo "Are A and B both true? " . ($a && $b) . "<br>";	
+  echo "Is only 1 of A or C true? " . ($a xor $c) . "<br>";
+    
 ?>
