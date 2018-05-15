@@ -111,6 +111,13 @@ echo "Current file: <b>" . __FILE__ . "</b><br><br>";
   echo "Is 5 equal to 3?" . (5 == 3) . "<br>";
   echo "Is 5 greater than 2? " . (5 > 2) . "<br>";
   echo "Are A and B both true? " . ($a && $b) . "<br>";	
-  echo "Is only 1 of A or C true? " . ($a xor $c) . "<br>";
-    
+  echo "Is only 1 of A or C true? " . ($a xor $c) . "<br><br>";
+
+// Equality vs Identity
+
+  $numberA = "1776";
+  $numberB = "+1776";
+
+  if ($numberA == $numberB) echo "Numbers A and B are equal. <br>";
+  if ($numberA !== $numberB) echo "Numbers A and B aren't identical, though. <br><br>"; 
 ?>
