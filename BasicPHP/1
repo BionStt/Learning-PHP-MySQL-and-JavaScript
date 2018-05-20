@@ -49,7 +49,7 @@ echo "Can I buy beer? " . $legal . "<br><br>";
 
 while ($count <= 12)
 {
-  echo $count . " squared is " . pow($count,2) . ". <br>";  
+  echo $count . " squared is " . $count^2 . ". <br>";  
   if ($count == 12)
   {
     echo "Done!<br><br>";
