@@ -57,6 +57,20 @@ while ($count <= 12)
   $count++;
 }
   
+// For loop
 
+for ($i = 1 ; $i <= 10 ; $i++)
+  {
+  if ($i == 4)
+    {
+    echo "The remainder of dividing 32 by " . $i . " is a secret.<br>";
+    continue;
+    }
+  echo "The remainder of dividing 32 by " . $i . " is " . 32 % $i . ".<br>";
+  if ($i == 10)
+    {
+    echo "Done!<br><br>";
+    }
+  }
 
 ?>
