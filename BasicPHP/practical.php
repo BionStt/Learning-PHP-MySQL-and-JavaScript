@@ -32,4 +32,17 @@ if(file_exists("simplesyntax.php"))
 
 echo file_exists("simplesyntax.php") ? "Yes, it does exist!" : "Nope!";
 
+//making a file
+
+$fileName = time() . ".txt";
+
+echo "<br><br><br>The file is <b>$fileName</b>.";
+
+$tempFile = fopen($fileName,'w') or die ("Failed to create file");
+
+$text = "The current day is " . date("l") . ".";
+
+fwrite($tempFile,$text) or die("Could not write to file.");
+fclose($tempFile);
+
 ?>
